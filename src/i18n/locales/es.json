@@ -1,0 +1,144 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "education": "Formación",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "role": "Desarrollador Full Stack",
+    "tagline": "Construyo aplicaciones web rápidas, seguras y cuidadas.",
+    "ctaContact": "Contactar"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "soon": "Más proyectos próximamente",
+    "visit": "Visitar web",
+    "viewCode": "Ver código",
+    "nexoraModal": {
+      "denied": "Acceso denegado: repositorio privado",
+      "title": "¡Me alegro de que estés interesado! 😄",
+      "body": "Nexora no es de código abierto: es un producto comercial. Pero estaré encantado de contarte más:",
+      "close": "Cerrar"
+    },
+    "items": {
+      "nexora": {
+        "name": "Nexora",
+        "desc": "ERP en la nube (SaaS) para centros de estética con modelo de franquicia multi-marca. Planteado con documentación primero —visión, reglas de negocio y casos de uso— y ejecutado por hitos verificados hasta el despliegue: agenda, TPV táctil, facturación legal certificada (VeriFactu · AEAT), caja, inventario, fichaje e informes, más recepcionista IA por WhatsApp, reposición automática de stock y campañas de marketing.",
+        "stats": {
+          "milestones": "hitos documentados",
+          "modules": "módulos de negocio",
+          "tests": "tests automatizados",
+          "audits": "hallazgos de auditoría resueltos"
+        },
+        "areas": {
+          "front": {
+            "title": "Frontend",
+            "desc": "SPA en Angular 20 (signals, componentes standalone) con 58 componentes y un sistema de diseño CSS propio."
+          },
+          "back": {
+            "title": "Backend",
+            "desc": "API REST en NestJS 11: 30 módulos, 45 servicios y 192 endpoints sobre PostgreSQL con Prisma y Redis."
+          },
+          "integrations": {
+            "title": "Integraciones",
+            "desc": "WhatsApp Cloud API con recepcionista IA (Claude), facturación VeriFactu contra la AEAT, impresión térmica ESC/POS y email."
+          },
+          "security": {
+            "title": "Ciberseguridad",
+            "desc": "Auth JWT con rotación de tokens, RBAC de 104 permisos, aislamiento multi-tenant, cifrado AES-256-GCM de datos sensibles, auditoría append-only y RGPD operativo."
+          }
+        }
+      },
+      "inefable": {
+        "name": "Estética Inefable",
+        "desc": "Web corporativa de un centro de estética, desarrollada con WordPress, incluyendo la gestión del hosting."
+      },
+      "psecurewd": {
+        "name": "PSecureWD",
+        "desc": "Mi TFG de Grado Superior (DAM): gestor de contraseñas móvil — app en React Native (Expo) con 8 pantallas, login con Google, generador de contraseñas y API en Express con MySQL. Mi primer proyecto full stack completo, el punto de partida de todo lo demás."
+      }
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "items": {
+      "origen": {
+        "role": "Desarrollador Full Stack",
+        "org": "Origen Corporation Biotech",
+        "desc": "Desarrollo full stack de aplicaciones web: frontend en Angular con backends en .NET y Node.js."
+      },
+      "inetum": {
+        "role": "Desarrollador ABAP",
+        "org": "Inetum",
+        "desc": "Desarrollo ABAP sobre SAP en los módulos de finanzas y logística: depuración y corrección de programas existentes, y desarrollo de programas nuevos."
+      }
+    }
+  },
+  "education": {
+    "title": "Formación",
+    "items": {
+      "master": {
+        "role": "Máster en Ciberseguridad",
+        "org": "Océano Atlántico · Zaragoza"
+      },
+      "dam": {
+        "role": "GS · Desarrollo de Aplicaciones Multiplataforma",
+        "org": "Salesianos · Zaragoza"
+      },
+      "smr": {
+        "role": "GM · Sistemas Microinformáticos y Redes",
+        "org": "Implika · Zaragoza"
+      }
+    }
+  },
+  "about": {
+    "title": "Sobre mí",
+    "p1": "Soy desarrollador full stack, formado en desarrollo de aplicaciones multiplataforma y con un máster en ciberseguridad. Llegué a este mundo por curiosidad —por entender cómo funcionan las cosas por dentro— y esa curiosidad sigue siendo el motor de mi trabajo: disfruto igual construyendo una interfaz cuidada que asegurando la capa que el usuario nunca ve.",
+    "p2": "He trabajado en consultoría sobre SAP, en desarrollo full stack en el sector biotecnológico y en proyectos propios, entre ellos Nexora, un ERP en la nube desarrollado de principio a fin. De cada etapa me llevo algo distinto: el rigor de los entornos corporativos, la versatilidad del trabajo de producto y la disciplina de llevar una idea hasta producción.",
+    "p3": "Me gusta trabajar en equipo, escuchar antes de opinar y anticipar los problemas antes de que aparezcan. Si tuviera que resumirme en una frase: soy una persona tranquila, constante y con muchas ganas de seguir aprendiendo de cada equipo del que forme parte.",
+    "highlights": {
+      "e2e": {
+        "title": "Desarrollo end-to-end",
+        "desc": "Capaz de llevar un producto de la idea a producción: arquitectura, base de datos, API, interfaz, tests y despliegue. Avalado por Nexora: 30 módulos, 49 tablas y 532 tests automatizados."
+      },
+      "security": {
+        "title": "Ciberseguridad aplicada",
+        "desc": "Un máster en ciberseguridad llevado a la práctica: autenticación con rotación de tokens, cifrado AES-256-GCM, RBAC granular, auditoría y RGPD operativo. Con auditoría de seguridad propia: 14 hallazgos, 14 resueltos."
+      },
+      "drive": {
+        "title": "Autonomía y potencial",
+        "desc": "De aprender una tecnología a entregarla en producción sin intermediarios: documentación primero, decisiones registradas y calidad verificable, no declarada."
+      }
+    },
+    "languagesTitle": "Idiomas",
+    "languages": {
+      "es": "Español",
+      "ro": "Rumano",
+      "en": "Inglés"
+    },
+    "levels": {
+      "native": "Nativo",
+      "intermediate": "Intermedio"
+    },
+    "skillsTitle": "Stack y herramientas",
+    "groups": {
+      "languages": "Lenguajes",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "security": "Ciberseguridad",
+      "tools": "Herramientas"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "heading": "¿Hablamos?",
+    "text": "Estoy abierto a nuevas oportunidades y proyectos. Escríbeme y te responderé lo antes posible.",
+    "location": "Zaragoza, España"
+  },
+  "footer": {
+    "top": "Volver arriba"
+  }
+}
