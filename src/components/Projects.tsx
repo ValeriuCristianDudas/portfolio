@@ -11,18 +11,40 @@ const caseBlocks = [
   { key: 'compliance', color: 'text-blue' },
 ]
 
+// Capturas de Nexora (webp), ordenadas por nombre de archivo
+const shotFiles = Object.entries(
+  import.meta.glob('../assets/nexora/*.webp', { eager: true, import: 'default' }) as Record<
+    string,
+    string
+  >,
+)
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(([, url]) => url)
+
+const shotIds = ['s01', 's02', 's03', 's04', 's05', 's06', 's07', 's08', 's09', 's10', 's11']
+
 export default function Projects() {
   const { t } = useTranslation()
   const [codeModalOpen, setCodeModalOpen] = useState(false)
+  const [lightbox, setLightbox] = useState<number | null>(null)
 
   useEffect(() => {
-    if (!codeModalOpen) return
+    if (!codeModalOpen && lightbox === null) return
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setCodeModalOpen(false)
+      if (e.key === 'Escape') {
+        setCodeModalOpen(false)
+        setLightbox(null)
+      }
+      if (lightbox !== null && e.key === 'ArrowRight') {
+        setLightbox((lightbox + 1) % shotFiles.length)
+      }
+      if (lightbox !== null && e.key === 'ArrowLeft') {
+        setLightbox((lightbox - 1 + shotFiles.length) % shotFiles.length)
+      }
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [codeModalOpen])
+  }, [codeModalOpen, lightbox])
 
   return (
     <Section id="projects" index="02" title={t('projects.title')}>
@@ -51,6 +73,35 @@ export default function Projects() {
 
             {project.featured && (
               <>
+                <div
+                  className="-mx-1 mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-1 pb-2"
+                  role="region"
+                  aria-label={t('projects.items.nexora.shots.aria')}
+                >
+                  {shotFiles.map((src, i) => (
+                    <figure key={src} className="w-[80%] shrink-0 snap-center sm:w-[380px]">
+                      <button
+                        type="button"
+                        onClick={() => setLightbox(i)}
+                        className="block w-full cursor-zoom-in overflow-hidden rounded-lg border border-border transition-colors hover:border-blue/60"
+                        aria-label={t(`projects.items.nexora.shots.${shotIds[i]}`)}
+                      >
+                        <img
+                          src={src}
+                          alt={t(`projects.items.nexora.shots.${shotIds[i]}`)}
+                          width={1180}
+                          height={663}
+                          loading="lazy"
+                          className="block h-auto w-full"
+                        />
+                      </button>
+                      <figcaption className="mt-2 font-mono text-xs text-muted">
+                        {t(`projects.items.nexora.shots.${shotIds[i]}`)}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+
                 <div className="mt-6 grid grid-cols-2 gap-3 sm:mt-8 sm:grid-cols-4 sm:gap-4">
                   {nexoraStats.map((stat) => (
                     <div
@@ -164,6 +215,61 @@ export default function Projects() {
           {t('projects.soon')}
         </div>
       </div>
+
+      {lightbox !== null && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
+          onClick={() => setLightbox(null)}
+        >
+          <figure className="w-full max-w-5xl" onClick={(e) => e.stopPropagation()}>
+            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-2xl shadow-black/60">
+              <div className="flex items-center gap-2 border-b border-border px-4 py-3">
+                <span className="size-3 rounded-full bg-[#ff5f57]" />
+                <span className="size-3 rounded-full bg-[#febc2e]" />
+                <span className="size-3 rounded-full bg-[#28c840]" />
+                <span className="ml-2 truncate font-mono text-xs text-muted">
+                  {t(`projects.items.nexora.shots.${shotIds[lightbox]}`)}
+                </span>
+                <button
+                  onClick={() => setLightbox(null)}
+                  aria-label={t('projects.nexoraModal.close')}
+                  className="ml-auto cursor-pointer p-1 font-mono text-sm text-muted transition-colors hover:text-fg"
+                >
+                  ✕
+                </button>
+              </div>
+              <img
+                src={shotFiles[lightbox]}
+                alt={t(`projects.items.nexora.shots.${shotIds[lightbox]}`)}
+                width={1180}
+                height={663}
+                className="block h-auto w-full"
+              />
+            </div>
+            <div className="mt-3 flex items-center justify-center gap-6">
+              <button
+                onClick={() => setLightbox((lightbox - 1 + shotFiles.length) % shotFiles.length)}
+                aria-label={t('projects.items.nexora.shots.prev')}
+                className="cursor-pointer rounded-md border border-border bg-card px-4 py-2 font-mono text-sm text-fg transition-colors hover:border-blue"
+              >
+                ←
+              </button>
+              <span className="font-mono text-xs text-muted">
+                {lightbox + 1} / {shotFiles.length}
+              </span>
+              <button
+                onClick={() => setLightbox((lightbox + 1) % shotFiles.length)}
+                aria-label={t('projects.items.nexora.shots.next')}
+                className="cursor-pointer rounded-md border border-border bg-card px-4 py-2 font-mono text-sm text-fg transition-colors hover:border-blue"
+              >
+                →
+              </button>
+            </div>
+          </figure>
+        </div>
+      )}
 
       {codeModalOpen && (
         <div

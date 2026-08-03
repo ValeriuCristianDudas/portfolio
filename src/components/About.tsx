@@ -86,6 +86,9 @@ export default function About() {
                 <img
                   src={photo}
                   alt="Cristian Dudas"
+                  width={640}
+                  height={640}
+                  loading="lazy"
                   className="h-full w-full object-cover"
                 />
               </div>

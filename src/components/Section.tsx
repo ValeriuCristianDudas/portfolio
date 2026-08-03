@@ -17,6 +17,7 @@ export default function Section({ id, index, title, children }: SectionProps) {
 
   useGSAP(
     () => {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
       gsap.from('[data-reveal]', {
         y: 32,
         opacity: 0,

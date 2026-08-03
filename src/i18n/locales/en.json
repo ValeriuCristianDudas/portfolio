@@ -29,7 +29,23 @@
     "items": {
       "nexora": {
         "name": "Nexora",
-        "desc": "A cloud ERP (SaaS) for beauty salons with a multi-brand franchise model. Planned documentation-first — vision, business rules and use cases — and executed through verified milestones all the way to deployment: scheduling, touch POS, certified legal invoicing (VeriFactu · Spanish Tax Agency), cash management, inventory, time tracking and reports, plus a WhatsApp AI receptionist, automatic restocking and marketing campaigns.",
+        "desc": "A cloud ERP (SaaS) for in-store businesses — beauty, retail, hospitality — with a multi-brand franchise model. Planned documentation-first — vision, business rules and use cases — and executed through verified milestones all the way to deployment: scheduling, touch POS, certified legal invoicing (VeriFactu · Spanish Tax Agency), cash management, inventory, time tracking and reports, plus a WhatsApp AI receptionist, automatic restocking and marketing campaigns.",
+        "shots": {
+          "aria": "Nexora screenshots",
+          "prev": "Previous",
+          "next": "Next",
+          "s01": "Home · store dashboard",
+          "s02": "POS · catalog",
+          "s03": "POS · cash payment",
+          "s04": "Sale completed · receipt",
+          "s05": "Cash drawer · open session",
+          "s06": "Daily schedule",
+          "s07": "Customer profile",
+          "s08": "Inventory · stock & minimums",
+          "s09": "Catalog · categories",
+          "s10": "Locations & opening hours",
+          "s11": "Reports"
+        },
         "stats": {
           "milestones": "documented milestones",
           "modules": "business modules",

@@ -55,6 +55,7 @@ export default function Hero() {
 
   useGSAP(
     () => {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
       gsap.from('[data-animate]', {
         y: 24,
         opacity: 0,
@@ -70,7 +71,7 @@ export default function Hero() {
     <section
       id="top"
       ref={scope}
-      className="mx-auto grid min-h-screen max-w-6xl items-center gap-12 px-6 pt-16 lg:grid-cols-2"
+      className="mx-auto grid min-h-dvh max-w-6xl items-center gap-12 px-5 pt-16 sm:px-6 lg:grid-cols-2"
     >
       <div>
         <p data-animate className="mb-4 font-mono text-green">

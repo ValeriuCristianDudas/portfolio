@@ -28,3 +28,24 @@ body {
 ::selection {
   @apply bg-blue/30;
 }
+
+/* Calidad de interacción: cursor, foco visible y latencia táctil */
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+a,
+button {
+  touch-action: manipulation;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

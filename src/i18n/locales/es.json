@@ -29,7 +29,23 @@
     "items": {
       "nexora": {
         "name": "Nexora",
-        "desc": "ERP en la nube (SaaS) para centros de estética con modelo de franquicia multi-marca. Planteado con documentación primero —visión, reglas de negocio y casos de uso— y ejecutado por hitos verificados hasta el despliegue: agenda, TPV táctil, facturación legal certificada (VeriFactu · AEAT), caja, inventario, fichaje e informes, más recepcionista IA por WhatsApp, reposición automática de stock y campañas de marketing.",
+        "desc": "ERP en la nube (SaaS) para negocios de venta presencial —estética, retail, hostelería...— con modelo de franquicia multi-marca. Planteado con documentación primero —visión, reglas de negocio y casos de uso— y ejecutado por hitos verificados hasta el despliegue: agenda, TPV táctil, facturación legal certificada (VeriFactu · AEAT), caja, inventario, fichaje e informes, más recepcionista IA por WhatsApp, reposición automática de stock y campañas de marketing.",
+        "shots": {
+          "aria": "Capturas de pantalla de Nexora",
+          "prev": "Anterior",
+          "next": "Siguiente",
+          "s01": "Inicio · panel del centro",
+          "s02": "TPV · catálogo",
+          "s03": "TPV · cobro en efectivo",
+          "s04": "Venta completada · ticket",
+          "s05": "Caja · sesión abierta",
+          "s06": "Agenda del día",
+          "s07": "Ficha de clienta",
+          "s08": "Inventario · stock y mínimos",
+          "s09": "Catálogo · categorías",
+          "s10": "Centros y horarios",
+          "s11": "Informes"
+        },
         "stats": {
           "milestones": "hitos documentados",
           "modules": "módulos de negocio",

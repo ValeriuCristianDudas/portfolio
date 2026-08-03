@@ -24,9 +24,13 @@ export default function TypedTokens({
   keepCursor = false,
 }: TypedTokensProps) {
   const total = tokens.reduce((sum, token) => sum + token.text.length, 0)
-  const [count, setCount] = useState(0)
+  const prefersReduced =
+    typeof window !== 'undefined' &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const [count, setCount] = useState(prefersReduced ? total : 0)
 
   useEffect(() => {
+    if (prefersReduced) return
     let interval: ReturnType<typeof setInterval> | undefined
     const timeout = setTimeout(() => {
       const start = Date.now()
