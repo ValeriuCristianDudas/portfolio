@@ -67,7 +67,7 @@ export default function Projects() {
             <h3 className={project.featured ? 'text-3xl font-bold' : 'text-2xl font-bold'}>
               {t(`projects.items.${project.id}.name`)}
             </h3>
-            <p className="mt-3 max-w-3xl text-muted">
+            <p className="mt-3 text-muted">
               {t(`projects.items.${project.id}.desc`)}
             </p>
 
