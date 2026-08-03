@@ -8,8 +8,8 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-bg/80 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <a href="#top" className="font-mono text-sm">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5 sm:px-6">
+        <a href="#top" className="shrink-0 font-mono text-sm">
           <span className="text-green">~</span>
           <span className="text-muted">/</span>cristian
           <span className="animate-pulse text-blue">_</span>
@@ -33,7 +33,8 @@ export default function Header() {
           </a>
         </nav>
 
-        <div className="flex items-center gap-4">
+        <div className="flex shrink-0 items-center gap-3">
+          <div className="flex items-center gap-2 md:hidden lg:flex">
           <a
             href={github}
             target="_blank"
@@ -66,6 +67,7 @@ export default function Header() {
               <path d="m22 6-10 7L2 6" />
             </svg>
           </a>
+          </div>
           <div className="flex items-center gap-1 rounded-md border border-border bg-card p-1 font-mono text-xs">
           {LANGS.map((lang) => (
             <button

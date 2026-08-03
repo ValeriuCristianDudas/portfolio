@@ -29,7 +29,7 @@ export default function About() {
 
   return (
     <Section id="about" index="01" title={t('about.title')}>
-      <div className="mb-8 grid gap-3 sm:mb-12 sm:gap-4 sm:grid-cols-3">
+      <div className="mb-8 grid gap-3 sm:mb-12 sm:gap-4 md:grid-cols-3">
         {highlights.map((item) => (
           <Expandable
             key={item.key}

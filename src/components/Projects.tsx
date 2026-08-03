@@ -74,31 +74,32 @@ export default function Projects() {
             {project.featured && (
               <>
                 <div
-                  className="-mx-1 mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-1 pb-2"
-                  role="region"
+                  className="mt-6 grid grid-cols-2 gap-2 sm:gap-3 md:grid-cols-3"
+                  role="group"
                   aria-label={t('projects.items.nexora.shots.aria')}
                 >
-                  {shotFiles.map((src, i) => (
-                    <figure key={src} className="w-[80%] shrink-0 snap-center sm:w-[380px]">
-                      <button
-                        type="button"
-                        onClick={() => setLightbox(i)}
-                        className="block w-full cursor-zoom-in overflow-hidden rounded-lg border border-border transition-colors hover:border-blue/60"
-                        aria-label={t(`projects.items.nexora.shots.${shotIds[i]}`)}
-                      >
-                        <img
-                          src={src}
-                          alt={t(`projects.items.nexora.shots.${shotIds[i]}`)}
-                          width={1180}
-                          height={663}
-                          loading="lazy"
-                          className="block h-auto w-full"
-                        />
-                      </button>
-                      <figcaption className="mt-2 font-mono text-xs text-muted">
-                        {t(`projects.items.nexora.shots.${shotIds[i]}`)}
-                      </figcaption>
-                    </figure>
+                  {shotFiles.slice(0, 6).map((src, i) => (
+                    <button
+                      key={src}
+                      type="button"
+                      onClick={() => setLightbox(i)}
+                      className="group relative aspect-video cursor-zoom-in overflow-hidden rounded-lg border border-border transition-colors hover:border-blue/60"
+                      aria-label={t(`projects.items.nexora.shots.${shotIds[i]}`)}
+                    >
+                      <img
+                        src={src}
+                        alt={t(`projects.items.nexora.shots.${shotIds[i]}`)}
+                        width={1180}
+                        height={663}
+                        loading="lazy"
+                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                      />
+                      {i === 5 && shotFiles.length > 6 && (
+                        <span className="absolute inset-0 flex items-center justify-center bg-black/60 font-mono text-lg font-semibold text-fg">
+                          +{shotFiles.length - 6}
+                        </span>
+                      )}
+                    </button>
                   ))}
                 </div>
 
