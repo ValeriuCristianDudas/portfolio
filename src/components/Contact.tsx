@@ -3,7 +3,11 @@ import Section from './Section'
 import { email, github, linkedin } from '../data'
 
 export default function Contact() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const cvUrl =
+    i18n.resolvedLanguage === 'en'
+      ? '/cv-valeriu-cristian-dudas-en.pdf'
+      : '/cv-valeriu-cristian-dudas-es.pdf'
 
   return (
     <Section id="contact" index="05" title={t('contact.title')}>
@@ -25,6 +29,13 @@ export default function Contact() {
           {email}
         </a>
         <div data-reveal className="mt-6 flex flex-wrap items-center justify-center gap-4">
+          <a
+            href={cvUrl}
+            download
+            className="rounded-md bg-green px-6 py-3 font-medium text-bg transition-opacity hover:opacity-85"
+          >
+            {t('contact.cv')} ↓
+          </a>
           <a
             href={github}
             target="_blank"

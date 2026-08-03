@@ -10,6 +10,9 @@
     "greeting": "Hi, I'm",
     "role": "Full Stack Developer",
     "tagline": "I build fast, secure and polished web applications.",
+    "available": "Available",
+    "modes": "Remote · Hybrid · On-site",
+    "cv": "Download CV",
     "ctaContact": "Get in touch"
   },
   "projects": {
@@ -32,6 +35,25 @@
           "modules": "business modules",
           "tests": "automated tests",
           "audits": "audit findings resolved"
+        },
+        "case": {
+          "toggle": "Read the technical case study",
+          "arch": {
+            "title": "Architecture",
+            "desc": "Modular monolith in a monorepo: a single deployment, real transactions across modules and clean NestJS module boundaries that would allow extracting services in the future. Versioned REST API with OpenAPI, ready to serve a mobile app as well."
+          },
+          "security": {
+            "title": "Security as a process",
+            "desc": "JWT authentication with token rotation and reuse detection, a 104-permission RBAC always enforced server-side, multi-tenant isolation resolved from the session (never from the request), column-level AES-256-GCM encryption for sensitive data and an append-only audit log. Self-run security audit: 14 findings, 14 resolved."
+          },
+          "quality": {
+            "title": "Verifiable quality",
+            "desc": "Documentation first: vision, business rules and use cases referenced from the code. 57 verified milestones, 370 unit tests and 162 E2E tests with Playwright against the real stack — no mocks — plus in-browser verification with all four application roles."
+          },
+          "compliance": {
+            "title": "Regulatory compliance",
+            "desc": "VeriFactu invoicing (Spanish RD 1007/2023) with chained SHA-256 fingerprints, verification QR and automatic submission to the Tax Agency; working-time records with database-enforced legal retention; and operational GDPR: portability, right to erasure, consents and clinical data minimisation."
+          }
         },
         "areas": {
           "front": {
@@ -136,6 +158,7 @@
     "title": "Contact",
     "heading": "Let's talk",
     "text": "I'm open to new opportunities and projects. Drop me an email and I'll get back to you as soon as possible.",
+    "cv": "Download CV (PDF)",
     "location": "Zaragoza, Spain"
   },
   "footer": {

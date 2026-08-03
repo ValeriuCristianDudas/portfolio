@@ -46,8 +46,12 @@ const codeTokens: Token[] = [
 const codePlain = codeTokens.map((token) => token.text).join('')
 
 export default function Hero() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const scope = useRef<HTMLElement>(null)
+  const cvUrl =
+    i18n.resolvedLanguage === 'en'
+      ? '/cv-valeriu-cristian-dudas-en.pdf'
+      : '/cv-valeriu-cristian-dudas-es.pdf'
 
   useGSAP(
     () => {
@@ -90,6 +94,17 @@ export default function Hero() {
         <p data-animate className="mt-6 max-w-md text-lg text-muted">
           {t('hero.tagline')}
         </p>
+        <a
+          data-animate
+          href="#contact"
+          className="mt-6 inline-flex items-center gap-2.5 rounded-full border border-green/40 bg-green/10 px-4 py-1.5 font-mono text-sm text-green transition-colors hover:border-green"
+        >
+          <span className="relative flex size-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green opacity-75" />
+            <span className="relative inline-flex size-2 rounded-full bg-green" />
+          </span>
+          {t('hero.available')} · {t('hero.modes')}
+        </a>
         <div data-animate className="mt-8 flex flex-wrap gap-3">
           <a
             href="#about"
@@ -102,6 +117,13 @@ export default function Hero() {
             className="rounded-[3px] border border-white/10 bg-[#313131] px-5 py-2.5 text-sm font-medium text-fg transition-colors hover:bg-[#3c3c3c]"
           >
             {t('hero.ctaContact')}
+          </a>
+          <a
+            href={cvUrl}
+            download
+            className="rounded-[3px] bg-[#238636] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#2ea043]"
+          >
+            {t('hero.cv')} ↓
           </a>
         </div>
       </div>

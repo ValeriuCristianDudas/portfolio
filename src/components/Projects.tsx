@@ -4,6 +4,13 @@ import Section from './Section'
 import Expandable from './Expandable'
 import { projects, nexoraStats, nexoraAreas, email, linkedin } from '../data'
 
+const caseBlocks = [
+  { key: 'arch', color: 'text-cyan' },
+  { key: 'security', color: 'text-purple' },
+  { key: 'quality', color: 'text-green' },
+  { key: 'compliance', color: 'text-blue' },
+]
+
 export default function Projects() {
   const { t } = useTranslation()
   const [codeModalOpen, setCodeModalOpen] = useState(false)
@@ -78,6 +85,30 @@ export default function Projects() {
                     </Expandable>
                   ))}
                 </div>
+
+                <Expandable
+                  always
+                  className="mt-4 rounded-lg border border-blue/30 bg-bg p-4 sm:mt-6 sm:p-5"
+                  header={
+                    <h4 className="font-mono text-sm font-semibold text-blue">
+                      {'> '}
+                      {t('projects.items.nexora.case.toggle')}
+                    </h4>
+                  }
+                >
+                  <div className="mt-4 space-y-5">
+                    {caseBlocks.map((block) => (
+                      <div key={block.key}>
+                        <h5 className={`font-mono text-sm font-semibold ${block.color}`}>
+                          {t(`projects.items.nexora.case.${block.key}.title`)}
+                        </h5>
+                        <p className="mt-1.5 text-sm leading-relaxed text-muted">
+                          {t(`projects.items.nexora.case.${block.key}.desc`)}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </Expandable>
               </>
             )}
 
