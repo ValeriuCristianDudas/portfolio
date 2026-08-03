@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useTranslation } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import Section from './Section'
 import Expandable from './Expandable'
 import { projects, nexoraStats, nexoraAreas, email, linkedin } from '../data'
@@ -68,7 +68,10 @@ export default function Projects() {
               {t(`projects.items.${project.id}.name`)}
             </h3>
             <p className="mt-3 max-w-3xl text-muted">
-              {t(`projects.items.${project.id}.desc`)}
+              <Trans
+                i18nKey={`projects.items.${project.id}.desc`}
+                components={{ b: <strong className="font-semibold text-fg" /> }}
+              />
             </p>
 
             {project.featured && (
@@ -155,7 +158,10 @@ export default function Projects() {
                           {t(`projects.items.nexora.case.${block.key}.title`)}
                         </h5>
                         <p className="mt-1.5 text-sm leading-relaxed text-muted">
-                          {t(`projects.items.nexora.case.${block.key}.desc`)}
+                          <Trans
+                            i18nKey={`projects.items.nexora.case.${block.key}.desc`}
+                            components={{ b: <strong className="font-semibold text-fg" /> }}
+                          />
                         </p>
                       </div>
                     ))}

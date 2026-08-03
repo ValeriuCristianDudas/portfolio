@@ -29,7 +29,7 @@
     "items": {
       "nexora": {
         "name": "Nexora",
-        "desc": "ERP en la nube (SaaS) para negocios de venta presencial —estética, retail, hostelería...— con modelo de franquicia multi-marca. Planteado con documentación primero —visión, reglas de negocio y casos de uso— y ejecutado por hitos verificados hasta el despliegue: agenda, TPV táctil, facturación legal certificada (VeriFactu · AEAT), caja, inventario, fichaje e informes, más recepcionista IA por WhatsApp, reposición automática de stock y campañas de marketing.",
+        "desc": "ERP en la nube (SaaS) para negocios de venta presencial: <b>estética, retail, hostelería…</b> con modelo de franquicia multi-marca. Planteado con <b>documentación primero</b> (visión, reglas de negocio y casos de uso) y ejecutado por hitos verificados hasta el despliegue: agenda, TPV táctil, facturación legal certificada (VeriFactu · AEAT), caja, inventario, fichaje e informes, más recepcionista IA por WhatsApp, reposición automática de stock y campañas de marketing.",
         "shots": {
           "aria": "Capturas de pantalla de Nexora",
           "prev": "Anterior",
@@ -64,7 +64,7 @@
           },
           "quality": {
             "title": "Calidad verificable",
-            "desc": "Documentación primero: visión, reglas de negocio y casos de uso referenciados desde el código. 57 hitos con verificación, 370 tests unitarios y 162 E2E con Playwright contra el stack real —sin mocks—, y verificación en navegador con los cuatro roles de la aplicación."
+            "desc": "Documentación primero: visión, reglas de negocio y casos de uso referenciados desde el código. 57 hitos con verificación, 370 tests unitarios y 162 E2E con Playwright contra el stack real, <b>sin mocks</b>, y verificación en navegador con los cuatro roles de la aplicación."
           },
           "compliance": {
             "title": "Cumplimiento normativo",
@@ -96,7 +96,7 @@
       },
       "psecurewd": {
         "name": "PSecureWD",
-        "desc": "Mi TFG de Grado Superior (DAM): gestor de contraseñas móvil — app en React Native (Expo) con 8 pantallas, login con Google, generador de contraseñas y API en Express con MySQL. Mi primer proyecto full stack completo, el punto de partida de todo lo demás."
+        "desc": "Mi TFG de Grado Superior (DAM): gestor de contraseñas móvil con app en <b>React Native (Expo)</b> de 8 pantallas, login con Google, generador de contraseñas y API en <b>Express + MySQL</b>. Mi primer proyecto full stack completo, el punto de partida de todo lo demás."
       }
     }
   },
@@ -134,7 +134,7 @@
   },
   "about": {
     "title": "Sobre mí",
-    "p1": "Soy desarrollador full stack, formado en desarrollo de aplicaciones multiplataforma y con un máster en ciberseguridad. Llegué a este mundo por curiosidad —por entender cómo funcionan las cosas por dentro— y esa curiosidad sigue siendo el motor de mi trabajo: disfruto igual construyendo una interfaz cuidada que asegurando la capa que el usuario nunca ve.",
+    "p1": "Soy desarrollador full stack, formado en desarrollo de aplicaciones multiplataforma y con un máster en ciberseguridad. Llegué a este mundo por curiosidad, <b>por entender cómo funcionan las cosas por dentro</b>, y esa curiosidad sigue siendo el motor de mi trabajo: disfruto igual construyendo una interfaz cuidada que asegurando la capa que el usuario nunca ve.",
     "p2": "He trabajado en consultoría sobre SAP, en desarrollo full stack en el sector biotecnológico y en proyectos propios, entre ellos Nexora, un ERP en la nube desarrollado de principio a fin. De cada etapa me llevo algo distinto: el rigor de los entornos corporativos, la versatilidad del trabajo de producto y la disciplina de llevar una idea hasta producción.",
     "p3": "Me gusta trabajar en equipo, escuchar antes de opinar y anticipar los problemas antes de que aparezcan. Si tuviera que resumirme en una frase: soy una persona tranquila, constante y con muchas ganas de seguir aprendiendo de cada equipo del que forme parte.",
     "highlights": {
