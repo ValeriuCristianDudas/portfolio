@@ -4,6 +4,8 @@
 
 **Mi portfolio personal · Bilingüe ES/EN · React + TypeScript + Tailwind + GSAP**
 
+🇬🇧 [Read this in English](README.en.md)
+
 </div>
 
 ---
