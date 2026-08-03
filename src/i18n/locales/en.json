@@ -29,7 +29,7 @@
     "items": {
       "nexora": {
         "name": "Nexora",
-        "desc": "A cloud ERP (SaaS) for in-store businesses: <b>beauty, retail, hospitality…</b> with a multi-brand franchise model. Planned <b>documentation-first</b> (vision, business rules and use cases) and executed through verified milestones all the way to deployment: scheduling, touch POS, certified legal invoicing (VeriFactu · Spanish Tax Agency), cash management, inventory, time tracking and reports, plus a WhatsApp AI receptionist, automatic restocking and marketing campaigns.",
+        "desc": "Cloud ERP (SaaS) for in-store businesses: beauty, retail, hospitality… with a multi-brand franchise model. Planned documentation-first (vision, business rules and use cases) and executed through verified milestones all the way to deployment: scheduling, touch POS, certified legal invoicing (VeriFactu · Spanish Tax Agency), cash management, inventory, time tracking and reports, plus a WhatsApp AI receptionist, automatic restocking and marketing campaigns.",
         "shots": {
           "aria": "Nexora screenshots",
           "prev": "Previous",
@@ -64,7 +64,7 @@
           },
           "quality": {
             "title": "Verifiable quality",
-            "desc": "Documentation first: vision, business rules and use cases referenced from the code. 57 verified milestones, 370 unit tests and 162 E2E tests with Playwright against the real stack, <b>no mocks</b>, plus in-browser verification with all four application roles."
+            "desc": "Documentation first: vision, business rules and use cases referenced from the code. 57 verified milestones, 370 unit tests and 162 E2E tests with Playwright against the real stack, no mocks, plus in-browser verification with all four application roles."
           },
           "compliance": {
             "title": "Regulatory compliance",
@@ -96,7 +96,7 @@
       },
       "psecurewd": {
         "name": "PSecureWD",
-        "desc": "My Higher Technician final project: a mobile password manager with a <b>React Native (Expo)</b> app of 8 screens, Google sign-in, a password generator and an <b>Express + MySQL</b> API. My first complete full stack project, the starting point for everything since."
+        "desc": "My Higher Technician final project: a mobile password manager with a React Native (Expo) app of 8 screens, Google sign-in, a password generator and an Express + MySQL API. My first complete full stack project, the starting point for everything since."
       }
     }
   },
@@ -134,8 +134,8 @@
   },
   "about": {
     "title": "About me",
-    "p1": "I'm a full stack developer, trained in multi-platform application development and holding a master's degree in cybersecurity. I got into this field out of curiosity, <b>wanting to understand how things work on the inside</b>, and that curiosity still drives my work: I enjoy building a polished interface just as much as securing the layer users never see.",
-    "p2": "I've worked in SAP consulting, in full stack development in the biotech sector, and on personal projects — among them Nexora, a cloud ERP built end to end. Each stage taught me something different: the rigour of corporate environments, the versatility of product work, and the discipline of taking an idea all the way to production.",
+    "p1": "I'm a full stack developer, trained in multi-platform application development and holding a master's degree in cybersecurity. I got into this field out of curiosity, wanting to understand how things work on the inside, and that curiosity still drives my work: I enjoy building a polished interface just as much as securing the layer users never see.",
+    "p2": "I've worked in SAP consulting, in full stack development in the biotech sector, and on personal projects, among them Nexora, a cloud ERP built end to end. Each stage taught me something different: the rigour of corporate environments, the versatility of product work, and the discipline of taking an idea all the way to production.",
     "p3": "I enjoy working in a team, listening before giving my opinion, and anticipating problems before they appear. If I had to sum myself up in one sentence: I'm a calm, consistent person, eager to keep learning from every team I'm part of.",
     "highlights": {
       "e2e": {

@@ -1,4 +1,4 @@
-import { Trans, useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 import Section from './Section'
 import Expandable from './Expandable'
 import { skillGroups } from '../data'
@@ -94,12 +94,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <p className="leading-relaxed text-muted">
-            <Trans
-              i18nKey="about.p1"
-              components={{ b: <strong className="font-semibold text-fg" /> }}
-            />
-          </p>
+          <p className="leading-relaxed text-muted">{t('about.p1')}</p>
           <p className="mt-4 leading-relaxed text-muted">{t('about.p2')}</p>
           <p className="mt-4 leading-relaxed text-muted">{t('about.p3')}</p>
 
