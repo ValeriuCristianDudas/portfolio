@@ -103,6 +103,11 @@
   "experience": {
     "title": "Experience",
     "items": {
+      "magapor":{
+        "role":"Full Stack Developer",
+        "org":"Magapor",
+        "desc":"Development of web and desktop applications."
+      },
       "origen": {
         "role": "Full Stack Developer",
         "org": "Origen Corporation Biotech",

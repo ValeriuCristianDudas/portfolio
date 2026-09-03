@@ -56,6 +56,7 @@ export interface TimelineData {
 }
 
 export const work: TimelineData[] = [
+  { id: 'magapor', period: '2026 — actualidad' },
   { id: 'origen', period: '2024 — 2025' },
   { id: 'inetum', period: '2023 — 2024' },
 ]
